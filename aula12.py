@@ -52,6 +52,7 @@ elif segundo_numero > primeiro_numero:
 else:
     print('Os dois números são iguais.')'''
 
+
 #Exercício Python 39: Faça um programa que leia o ano de nascimento de um jovem e informe, de acordo com a sua idade, 
 #se ele ainda vai se alistar ao serviço militar, se é a hora exata de se alistar ou se já passou do tempo do alistamento.
 #Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.
@@ -70,8 +71,45 @@ elif idade >= 19:
     resultado = idade - 19
     print(f'Seu prazo de alistamento já passou {resultado} anos.')'''
 
+
 #Exercício Python 040: Crie um programa que leia duas notas de um aluno e calcule sua média, mostrando uma mensagem no
 #final, de acordo com a média atingida:
 #–Média abaixo de 5.0: REPROVADO
 #–Média entre 5.0 e 6.9: RECUPERAÇÃO
 #–Média 7.0 ou superior: APROVADO
+
+'''primeira_nota = float(input('Digite a primeira nota:'))
+segunda_nota = float(input('Digite a segunda nota:'))
+media = (primeira_nota + segunda_nota) / 2
+print(f'Sua média nessa matéria foi de {media}.')
+if media <= 5.0:
+    print('Você foi reprovado!')
+elif media > 5.0 and media <= 6.9:
+    print('Você está de recuparação')
+elif media >= 7.0:
+    print('Parabéns você foi aprovado!')'''
+
+#Exercício Python 041: A Confederação Nacional de Natação precisa de um programa que leia o ano de nascimento de um 
+#atleta e mostre sua categoria, de acordo com a idade:
+#–Até 9 anos: MIRIM
+#–Até 14 anos: INFANTIL
+#–Até 19 anos: JÚNIOR
+#–Até 25 anos: SÊNIOR
+#–Acima de 25 anos: MASTER
+
+'''from datetime import date
+year = date.today().year 
+ano = int(input('Qual o ano de nascimento do atleta?'))
+idade = year - ano
+print(f'Se seu atleta nasceu em {ano} logo a sua idade é de {idade} anos.')
+if idade <= 9:
+    print('Sua categoria é MIRIM.')
+elif idade == 9 and idade <= 14:
+    print('Sua categoria é a INFANTIL.')
+elif idade >= 15 and idade <= 19:
+    print('Sua categoria é a JUNIOR.')
+elif idade >= 19 and idade <= 25:
+    print('Sua categoria é a SÊNIOR.')
+elif idade > 25:
+    print('Sua categoria é a MASTER.')        
+print('Fim do programa.')'''
